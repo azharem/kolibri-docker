@@ -1,9 +1,8 @@
 FROM python:3.11.0a7-buster
 
-#install python
+# install curl
 RUN apt-get update && apt-get install -y curl
 
-#no need to add cleaning command as alpine cleans package automatically
 
 #download the latest kolibri
 RUN curl --silent "https://api.github.com/repos/learningequality/kolibri/releases/latest" \
