@@ -1,4 +1,4 @@
-FROM python:3.11.0a7-buster
+FROM --platform=linux/amd64 python:3.11.0a7-buster
 
 # install curl
 RUN apt-get update && apt-get install -y curl
